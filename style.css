@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1rem;
+    letter-spacing: 0.15px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 100vh;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50vh;
+}
+
+.content > h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    height: 3rem;
+    font-size: 2.4rem;
+    color: #00519d;
+}
+
+.content > input{
+    text-align: center;
+    margin-bottom: 2rem;
+    box-sizing: border-box;
+    width: 40%;
+    height: 4rem;
+    border: 1px solid #ff6700;
+    border-radius: 4px;
+    color: #acacac;
+}
+
+input:focus{
+    outline: #ff6700;
+}
+
+input::selection{
+    background-color: rgba(87, 186, 172, 0.22);
+}
+
+.content > button{
+    width: 18rem;
+    height: 4rem;
+    background-color: #ff6700;
+    border-radius: 4px;
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+br{
+    display: none;
+}
+
+@media (max-width: 750px){
+    br{
+        display: initial;
+    }
+
+    .content > input{
+        height: 2rem;
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .content > button{
+        width: 90%;
+        height: 2rem;
+    }
+}
